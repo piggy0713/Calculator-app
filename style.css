@@ -10,7 +10,7 @@
   --color-keyResult-shadow: hsl(6, 70%, 34%);
   --color-keyMain-background: hsl(30, 25%, 89%);
   --color-keyMain-shadow: hsl(28, 16%, 65%);
-  --color-text-main: #444b5a;
+  --color-text-main: hsl(221, 14%, 31%);
   --color-text-screen: #fff;
   --color-text-secondary: #fff;
   --slider-position: 3px;
@@ -43,24 +43,27 @@
   --color-keyMain-background: hsl(268, 47%, 21%);
   --color-keyMain-shadow: hsl(290, 70%, 36%);
   --color-text-main: hsl(52, 100%, 62%);
+  --color-text-secondary: #fff;
   --color-text-dark: hsl(198, 20%, 13%);
-  --color-text-white: #fff;
   --color-text-screen: hsl(52, 100%, 62%);
   --slider-position: calc(100% - 13px);
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  max-width: 1440px;
   font-size: 32px;
   background-color: var(--color-main-background);
   font-family: "Spartan", sans-serif;
 }
 
 .container {
-  margin: 10% 40%;
+  margin: 10% 30%;
+  display: grid;
 }
 
 .calculatorHeader {
@@ -68,7 +71,7 @@ body {
 }
 
 .calculatorTitle {
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   float: left;
   width: 10%;
 }
@@ -76,15 +79,14 @@ body {
 .calculatorTheme {
   float: right;
   display: flex;
-  width: 40%;
-  font-size: 0.6rem;
+  width: 30%;
+  font-size: 0.35rem;
 }
 
 .themeTitle {
   text-transform: uppercase;
   flex: 1 100px;
   align-self: flex-end;
-  width: 40%;
 }
 
 .themeNum {
@@ -121,6 +123,59 @@ body {
   left: var(--slider-position);
 }
 
+.calculatorScreen {
+  background-color: var(--color-screen-background);
+  height: 100px;
+  margin: 5% 0;
+  border-radius: 10px;
+}
+
+.inputField {
+  color: var(--color-text-screen);
+  text-align: right;
+  padding: 6%;
+}
+
+.keypadContainer {
+  display: grid;
+  background-color: var(--color-keypad-background);
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.keypadContainer button {
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Spartan", sans-serif;
+}
+
+.numoperatorKey {
+  background-color: var(--color-keyMain-background);
+  box-shadow: var(--color-keyMain-shadow);
+  text-shadow: var(--color-keyMain-shadow);
+  color: var(--color-text-main);
+  border-color: var(--color-keyMain-background);
+  font-size: 0.8rem;
+}
+
+.delete,
+.reset {
+  background-color: var(--color-keyFn-background);
+  box-shadow: var(--color-keyFN-shadow);
+  color: var(--color-text-secondary);
+  border-color: var(--color-keyFn-background);
+}
+
+.equal {
+  background-color: var(--color-keyResult-backgroundToggle);
+  box-shadow: var(--color-keyResult-shadow);
+  color: var(--color-text-dark, var(--color-text-secondary, white));
+  border-color: var(--color-keyResult-backgroundToggle);
+}
+
 .attribution {
-  visibility: hidden;
+  display: none;
 }
