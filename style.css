@@ -169,11 +169,16 @@ body {
   border-color: var(--color-keyFn-background);
 }
 
+.reset {
+  grid-area: 5/1/6/3;
+}
+
 .equal {
   background-color: var(--color-keyResult-backgroundToggle);
   box-shadow: var(--color-keyResult-shadow);
   color: var(--color-text-dark, var(--color-text-secondary, white));
   border-color: var(--color-keyResult-backgroundToggle);
+  grid-area: 5/3/6/5;
 }
 
 .attribution {
