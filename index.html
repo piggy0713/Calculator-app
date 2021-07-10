@@ -35,31 +35,65 @@
       </div>
 
       <div class="calculatorScreen">
-        <div class="inputField">399,981</div>
+        <div class="inputField" id="input">0</div>
       </div>
 
       <div class="keypadContainer">
-        <button type="button" class="numoperatorKey" id="num7">7</button>
-        <button type="button" class="numoperatorKey" id="num8">8</button>
-        <button type="button" class="numoperatorKey" id="num9">9</button>
-        <button type="button" class="delete" id="delete">del</button>
+        <button type="button" class="numoperatorKey" value="7" id="numKey">
+          7
+        </button>
+        <button type="button" class="numoperatorKey" value="9" id="numKey">
+          8
+        </button>
+        <button type="button" class="numoperatorKey" value="9" id="numKey">
+          9
+        </button>
+        <button type="button" class="delete" value="delete" id="delete">
+          del
+        </button>
 
-        <button type="button" class="numoperatorKey" id="num4">4</button>
-        <button type="button" class="numoperatorKey" id="num5">5</button>
-        <button type="button" class="numoperatorKey" id="num6">6</button>
-        <button type="button" class="numoperatorKey" id="add">+</button>
+        <button type="button" class="numoperatorKey" value="4" id="numKey">
+          4
+        </button>
+        <button type="button" class="numoperatorKey" value="5" id="numKey">
+          5
+        </button>
+        <button type="button" class="numoperatorKey" value="6" id="numKey">
+          6
+        </button>
+        <button type="button" class="numoperatorKey" value="+" id="add">
+          +
+        </button>
 
-        <button type="button" class="numoperatorKey" id="num1">1</button>
-        <button type="button" class="numoperatorKey" id="num2">2</button>
-        <button type="button" class="numoperatorKey" id="num3">3</button>
-        <button type="button" class="numoperatorKey" id="minus">-</button>
+        <button type="button" class="numoperatorKey" value="1" id="numKey">
+          1
+        </button>
+        <button type="button" class="numoperatorKey" value="2" id="numKey">
+          2
+        </button>
+        <button type="button" class="numoperatorKey" value="3" id="numKey">
+          3
+        </button>
+        <button type="button" class="numoperatorKey" value="-" id="minus">
+          -
+        </button>
 
-        <button type="button" class="numoperatorKey" id="point">.</button>
-        <button type="button" class="numoperatorKey" id="num0">0</button>
-        <button type="button" class="numoperatorKey" id="divide">/</button>
-        <button type="button" class="numoperatorKey" id="times">x</button>
+        <button type="button" class="numoperatorKey" value="." id="point">
+          .
+        </button>
+        <button type="button" class="numoperatorKey" value="0" id="numKey">
+          0
+        </button>
+        <button type="button" class="numoperatorKey" value="/" id="divide">
+          /
+        </button>
+        <button type="button" class="numoperatorKey" value="*" id="times">
+          x
+        </button>
 
-        <button type="button" class="reset" id="reset">reset</button>
+        <button type="button" class="reset" value="reset" id="reset">
+          reset
+        </button>
         <button type="button" class="equal" id="result">=</button>
       </div>
     </div>
@@ -71,6 +105,7 @@
       >. Coded by <a href="#">Karida Chen</a>.
     </div>
 
+    <script src="./script.js"></script>
     <script src="./theme.js"></script>
   </body>
 </html>

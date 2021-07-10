@@ -51,7 +51,7 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -59,6 +59,10 @@ body {
   font-size: 32px;
   background-color: var(--color-main-background);
   font-family: "Spartan", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -183,4 +187,26 @@ body {
 
 .attribution {
   display: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .container {
+    margin: 10%;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 376px) {
+  .container {
+    margin: 10% 5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 5%;
+  }
+
+  .calculatorTheme {
+    width: 40%;
+  }
 }
