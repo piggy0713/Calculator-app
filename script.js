@@ -1,5 +1,5 @@
 let input = document.getElementById("input");
-let userInput = document.querySelector(".keypadContainer");
+let userInput = document.querySelectorAll(".keypadContainer button");
 let result = document.getElementById("result");
 
 const inputDisplay = (num) => {
@@ -27,9 +27,7 @@ const getResult = () => {
   const regex = /[+|\-|\*|/][0-9.]/g;
   if (input.innerHTML.match(regex)) {
     let tempInput = input.innerHTML;
-    if (tempInput.includes(",")) {
-      tempInput = tempInput.replace(/,/g, "");
-    }
+    tempInput = tempInput.replace(/,/g, "");
 
     let result = eval(tempInput);
 
@@ -41,5 +39,8 @@ const getResult = () => {
   }
 };
 
-userInput.addEventListener("click", inputDisplay);
+for (const el of userInput) {
+  el.addEventListener("click", inputDisplay);
+}
+
 result.addEventListener("click", getResult);
