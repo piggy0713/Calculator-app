@@ -24,7 +24,7 @@ const inputDisplay = (num) => {
 };
 
 const getResult = () => {
-  const regex = /[+|-|*|/][0-9]/g;
+  const regex = /[+|-|*|/][0-9.]/g;
   let tempInput = input.innerHTML;
   if (tempInput.includes(",")) {
     tempInput = tempInput.replace(/,/g, "");
