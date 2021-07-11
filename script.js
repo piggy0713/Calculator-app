@@ -24,12 +24,13 @@ const inputDisplay = (num) => {
 };
 
 const getResult = () => {
-  const regex = /[+|-|*|/][0-9.]/g;
-  let tempInput = input.innerHTML;
-  if (tempInput.includes(",")) {
-    tempInput = tempInput.replace(/,/g, "");
-  }
-  if (tempInput.match(regex)) {
+  const regex = /[+|\-|\*|/][0-9.]/g;
+  if (input.innerHTML.match(regex)) {
+    let tempInput = input.innerHTML;
+    if (tempInput.includes(",")) {
+      tempInput = tempInput.replace(/,/g, "");
+    }
+
     let result = eval(tempInput);
 
     let roundedResult = Math.round(result * 100) / 100;
