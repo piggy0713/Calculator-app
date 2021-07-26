@@ -19,5 +19,5 @@ This is a simple javascript calculator
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Grid
+- CSS Grid, Theme
 - JavaScript
