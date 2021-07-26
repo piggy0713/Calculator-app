@@ -1,6 +1,6 @@
 # JS calculator with color theme switcher
 
-This is a simply javascript calculator
+This is a simple javascript calculator
 
 ## Table of contents
 
